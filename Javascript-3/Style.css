@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+:root{
+        /*=============== Font - Family ===============*/
+        --title:'Khand', sans-serif;
+        --descretion-font:'Switzer', sans-serif;
+}
+body{
+    background: #001e4d;
+}
+.app{
+    background-color: #fff;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+}
+.app h1{
+    font-weight: 700;
+    font-family: var(--title);
+    font-size: 3rem;
+    color: #001e4d;
+    border-bottom: 1px solid #001e4d;
+    padding-bottom: 25px;
+}
+.quiz{
+    padding: 20px 0;
+}
+.quiz h2{
+    font-size: 29px;
+    font-family: var(--title);
+    color: #001e4d;
+    padding-bottom: 15px;
+    transition: all 0.3s ease;
+}
+.btn{
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 10px 0px 0px 15px;
+    background-color: transparent;
+    text-align: left;
+    color: #222;
+    border: none;
+    border-right: 4px solid #001e4d;
+    font-size: 16px;
+    font-family: var(--descretion-font);
+    transition: all 0.3s ease;
+
+}
+.btn:hover:not([disabled]) {
+    background-color: #001e4d;
+    border-radius: 25px 0px 0px 25px;
+    color: #fff;
+    transform: translateY(12px);
+    box-shadow: 7px 8px 11px #0005;
+}
+.btn:disabled {
+    cursor: no-drop;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+    
+}
+#next-btn{
+    background-color: transparent;
+    border: 2px solid #001e4d;
+    padding: 10px;
+    width: 160px;
+    color: #001e4d;
+    font-family: var(--title);
+    font-size: 18px;
+    border-radius: 25px;
+    margin: 20px auto 0;
+    cursor: pointer;
+    display: none;
+    font-size: 20px;
+    font-weight: 500;
+    
+}
+
+#next-btn:hover{
+background-color: #001e4d;
+transition: all 0.5s ease;
+color: #fff;
+box-shadow: 7px 8px 11px #0005;
+}
+.correct{
+    background-color: #9aeabc;
+    transition: all 0.3s ease;
+}
+.Incorrect{
+    background-color: #ff9393;
+    transition: all 0.3s ease;
+}
