@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+:root{
+        /*=============== Font - Famili ===============*/
+        --title:'Khand', sans-serif;
+        --descretion-font:'Switzer', sans-serif;
+}
+.container{
+    width: 100%;
+    min-height: 100dvh;
+    background: linear-gradient(135deg,#153677,#4e085f);
+    padding: 10px;
+}
+.top-app{
+    width: 100%;
+    max-width: 540px;
+    background-color: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+.top-app h1{
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 3rem;
+    font-family: var(--title);
+}
+.top-app h1 img{
+    width: 30px;
+    margin-left: 10px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 10px;
+    margin-bottom: 30px;
+}
+input{
+    font-family: var(--descretion-font);
+    border: 0;
+    outline: 0;
+    background: transparent;
+    padding: 10px;
+}
+button{
+    padding: 16px 50px;
+    border: none;
+    outline: 0;
+    background-color: #ff5945;
+    border-radius: 30px;
+    font-family: var(--title);
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 25px;
+    border-radius: 50%;
+    background: url(/Project-Of-Javascript/Javascript-2/img/images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(/Project-Of-Javascript/Javascript-2/img/images/checked.png);
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background-color: #edeef0;
+}
+/* .checked {
+    text-decoration: line-through;
+    color: #888; 
+
+li span {
+    margin-left: 10px;
+    color: red;
+    cursor: pointer;
+} */
